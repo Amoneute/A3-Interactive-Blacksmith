@@ -1,0 +1,49 @@
+/* Assignment 3 - Forge Controls */
+
+.controls label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.controls input {
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid #bdc9c2;
+    border-radius: .5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.control-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.controls button {
+    padding: .75rem 1rem;
+    background: #006341;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: #004b31;
+}
+
+.controls button:focus-visible,
+.controls input:focus-visible {
+    outline: 3px solid #e0a43b;
+    outline-offset: 3px;
+}
+
+@media (max-width: 500px) {
+    .control-buttons button {
+        width: 100%;
+    }
+}
